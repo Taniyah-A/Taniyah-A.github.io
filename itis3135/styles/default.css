@@ -6,4 +6,31 @@ body {
 }
 a {
     color: #00A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #58587d;
+    text-decoration: line;
+}
+
+main {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+h2 {
+    text-align: Center
+}
+img {
+    width: 90%;
+}
+figure {
+    text-align: center;
+    font-style: italic;
+}
+ul {
+    text-align: left;
+    align-items: left;
+    
 }
