@@ -19,11 +19,14 @@ main {
     margin-left: 20%;
     margin-right: 20%;
 }
+.welcome {
+    text-align: center;
+}
 h2 {
     text-align: Center
 }
 img {
-    width: 70%;
+    width: 100%;
 }
 figure {
     text-align: center;
@@ -34,6 +37,6 @@ ul {
     align-items: left;
     
 }
-p {
+main p{
     text-align: left;
 }
