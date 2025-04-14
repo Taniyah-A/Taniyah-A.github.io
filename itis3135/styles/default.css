@@ -11,19 +11,20 @@ a {
 
 a:hover {
     color: #58587d;
-    text-decoration: line;
+    text-decoration: underline;
 }
 
 main {
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 .welcome {
     text-align: center;
 }
 h2 {
-    text-align: Center
+    text-align: center;
 }
 img {
     width: 100%;
@@ -39,4 +40,33 @@ ul {
 }
 main p{
     text-align: left;
+}
+
+/* For Laptops */
+@media screen and (min-width: 981px) {
+    body {
+        background-color: #ccc3da;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        font-size: 1rem;
+    }
+    ul {
+        padding-left: 1rem;
+    }
+}
+
+/* For Mobile Devices */
+@media screen and (max-width: 600px) {
+    main {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+    h2 {
+        font-size: 0.95rem;
+        padding-left: 1rem;
+    }
 }
