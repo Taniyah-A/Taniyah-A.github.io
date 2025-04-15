@@ -1,0 +1,11 @@
+body{
+    font-family: "Moderustic", serif;
+            /* 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif 
+            "Source Serif 4", serif
+            */
+            background-color: #e3e6df;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-top: 170px;
+}
