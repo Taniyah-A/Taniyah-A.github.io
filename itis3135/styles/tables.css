@@ -6,16 +6,106 @@ body{
     text-align: center;
 }
 h1 {
+    color: #606178;
+}
+h2 {
+    color: #606178;
+    font-size: 40px;
+}
+h3 {
     color: #404152;
+    font-size: 22px;
 }
 header {
+    padding-top: 40px;
     color: #404152;
 }
 nav > a {
     color: #ff9eb8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+a:hover {
+    color: #404152;
+    text-decoration: underline;
 }
 main {
     color: #414747;
     font-size: 18px;
 }
-main > 
+figcaption {
+    font-style: italic;
+}
+/* For Laptops */
+@media screen and (min-width: 981px) {
+    body {
+        background-color: #e3e6df;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        font-size: 1rem;
+    }
+}
+
+/* For Mobile Devices */
+@media screen and (max-width: 600px) {
+    main {
+        font-size: 0.95rem;
+        padding: 0.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+}
+
+li {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+ol {
+    list-style-position: outside;
+    margin: 0 auto; 
+    width: max-content;         
+    padding-left: 1.5em;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid #606178;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #606178;
+    color: #e6e1d1;
+    border: 1px solid #414747;
+    padding: 10px;
+    text-align: center;
+}
+
+.complex tr:nth-child(even){
+    background-color: #aeaec5;
+}
+.light {
+    background-color: #e3e6df;
+}
+.dark {
+    background-color: #aeaec5;
+}
+tfoot{
+    font-weight: bold;
+}
+footer {
+    color: #414747;
+}
