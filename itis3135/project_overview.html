@@ -14,13 +14,13 @@
     <main>
         <h2>Client Project Overview</h2>
         <ul>
-            <li>Project Name: <strong>Nit Picky Confections- Portfolio Website</strong></li>
-            <li>Prject Overview</li>
+            <li><strong>Project Name: Nit Picky Confections- Portfolio Website</strong></li>
+            <li><strong>Prject Overview:</strong></li>
             <li style="list-style: none;">
                 <ul>
-                    <li><strong>Function & Purpose:</strong> This websire will showcase the professional portfolio and business for a local at-home baker. It will showcase their skills, specialties, and previous work while offering others an easy way to contact the baker and request orders. </li>
-                    <li><strong>Intended Users:</strong> Potential customers in the Raleigh, Cary, Durham area and returning clients. Also the admin to recieve orders.</li>
-                    <li><strong>Content Overview:</strong> There will be a home page, about page, gallery, menu, order page, and a contact page</li>
+                    <li><strong>Function & Purpose:</strong> This website will serve as a professional online portfolio and business hub for a local at-home baker. It will showcase their baking skills, highlight their specialties, and display examples of their previous creations. Importantly, it will provide a seamless way for potential customers to contact the baker and easily request custom orders. </li>
+                    <li><strong>Intended Users:</strong> Potential customers in the Raleigh, Cary, Durham area and returning clients. Also the website will provide an interface for the administrator (the baker) to receive and manage order inquiries.</li>
+                    <li><strong>Content Overview:</strong> There will be a home page, about page, gallery, menu, order inquiry page, and a contact page</li>
                 </ul>
             </li>
             <li><strong>Client </strong></li>
@@ -35,14 +35,113 @@
             <li><strong>Wireframe:</strong></li>
             <li style="list-style: none;">
                 <figure>
-
-                    <figcaption>Client Project site map made with draw.io</figcaption>
+                    <img src="images/clientProject.drawio.png" alt="default page design" style="max-width: 350px;">
+                    <figcaption>Client Project Wireframe made with draw.io</figcaption>
                 </figure>
             </li>
-            <li><stong>Page Design:</stong></li>
-            <li list-style="none;">
-
+            <li><strong>Site Map:</strong>
+                <figure>
+                    <img src="images/clientProjectSitemap.drawio.png" alt="website site map" style="max-width: 750px;">
+                    <figcaption>Site map made with draw.io</figcaption>
+                </figure>
+            </li>
+            <li><strong>Page Design:</strong></li>
+            <li style="list-style: none;">
+                <ul>
+                    <li><strong>Name:</strong>Home</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Purpose:</strong> Welcome and introduce viewers to Nit Picky Confections.</li>
+                            <li><strong>Audience:</strong> Potential customers and returning customers. </li>
+                            <li><strong>Content:</strong> A welcoming introduction to Nit Picky Confections, showcasing a few tantalizing images of their best creations. Include a brief overview of their style and offerings. A prominent call to action to explore the gallery or menu would be great.</li>
+                            <li><strong>Buttons, Hyperlinks, or Dropdowns:</strong>Buttons</li>
+                            <li><strong>Actions:</strong> When the user clicks on certain buttons, navigates to another page. </li>
+                        </ul>
+                    </li>
+                    <li><strong>Name:</strong> About Me</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Purpose:</strong>Introduce the owner of Nit Picky Confections</li>
+                            <li><strong>Audience:</strong> New Customers</li>
+                            <li><strong>Content:</strong> Tell the story behind Nit Picky Confections. Introduce the baker, their passion, their philosophy, and what makes their creations special.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Name:</strong> Gallery</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Purpose:</strong> Show organized photos of her work. </li>
+                            <li><strong>Audience:</strong> Customers</li>
+                            <li><strong>Content:</strong> A visually stunning showcase of past work.</li>
+                            <li><strong>Buttons, Hyperlinks, or Dropdowns:</strong>Buttons and Dropdowns</li>
+                            <li><strong>Actions:</strong>A set of jQuery UI tabs to easily navigate between different categories of baked goods. The image data for each tab could be loaded via AJAX. Use a jQuery image gallery plugin (like Lightbox or Slick Carousel) to allow users to click on thumbnails and view larger images in an interactive way.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Name:</strong> Menu</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Purpose:</strong> Show customers the menu options.</li>
+                            <li><strong>Audience:</strong> New and returning customers</li>
+                            <li><strong>Content:</strong> A detailed list of all the delicious offerings, including descriptions and potentially base prices. </li>
+                            <li><strong>Buttons, Hyperlinks, or Dropdowns:</strong> "Order Now" Button</li>
+                            <li><strong>Actions:</strong> "Order Now" Navigates to the Order Page.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Name:</strong> Order</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Purpose:</strong> Easy way for customers to submit order requests</li>
+                            <li><strong>Audience:</strong> Customers</li>
+                            <li><strong>Content:</strong> A form for potential customers to submit order requests. Include fields for name, contact information, type of order, desired date, quantity, and any specific details or custom requests.</li>
+                            <li><strong>Enter Data:</strong>yes, fields for name, contact information, type of order, desired date, quantity, and any specific details. </li>
+                            <li><strong>Data Field Validation:</strong>Yes, everything execpt "spacific details" is required.</li>
+                            <li><strong>Buttons, Hyperlinks, or Dropdowns:</strong>"Submit" button</li>
+                            <li><strong>Actions:</strong>The "Submit" button will provide immediate feedback if the user did not fill-in required fields, the button will also stimulate sending the order details and display a confirmation message.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Name:</strong> Contact</li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Purpose:</strong> Allow customers to contact the owner.</li>
+                            <li><strong>Audience:</strong> New and returning customers</li>
+                            <li><strong>Content:</strong> Provide contact information such as email address, and social media links, small map of general service area.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Dynamic Functionality: </strong></li>
+            <li style="list-style: none;">
+                <ul>
+                    <li><strong>Gallery Page - Interactive Image Gallery</strong></li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Description:</strong> Implement a dynamic image gallery to showcase the bakery's products using a carousel. JavaScript will be used to control the display of images, animations, and user interaction.</li>
+                            <li><strong>Why:</strong> To provide an engaging and visually appealing way for customers to view the products. </li>
+                            <li><strong>Example:</strong> https://www.walmart.com/</li>
+                        </ul>
+                    </li>
+                    <li><strong>Order Page - Interactive Order Form</strong></li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Description:</strong> Create an interactive order request form. This will involve JavaScript to validate form inputs.</li>
+                            <li><strong>Why:</strong> To streamline the request process and reduce errors.</li>
+                            <li><strong>Example:</strong> https://www.dominos.com/en/</li>
+                        </ul>
+                    </li>
+                    <li><strong>Home Page - Dynamic Content Updates/Announcements</strong></li>
+                    <li style="list-style: none;">
+                        <ul>
+                            <li><strong>Description: </strong> Implement a section on the home page to display dynamic content, such a special offers and promotions:</li>
+                            <li><strong>Why:</strong> To engage returning visitors and highlight important information. It would also promote certain items.</li>
+                            <li><strong>Example:</strong> https://www.cinnabon.com/</li>
+                        </ul>
+                    </li>
+                </ul>
             </li>
         </ul>
     </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script> 
 </body>
+</html>
