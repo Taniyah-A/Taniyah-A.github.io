@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taniyah Armstrong's Tranquil Antelope || Name SlideShow</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,7 +13,192 @@
     </header>
     <main>
         <h2>Slideshow Gallery</h2>
-        
+        <div class="container">
+            <!-- Slides -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 16</div>
+                <img src="images/teaset.jpg" alt="T for Tea Set" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 16</div>
+                <img src="images/airplane.jpg" alt="A for Airplane" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 16</div>
+                <img src="images/nest.jpg" alt="N for Nest" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 16</div>
+                <img src="images/icecream.jpg" alt="I for Ice Cream" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 16</div>
+                <img src="images/yarn.jpg" alt="Y for Yarn" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 16</div>
+                <img src="images/apple.jpg" alt="A for Apple" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 16</div>
+                <img src="images/headphones.jpg" alt="H for Headphones" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 16</div>
+                <img src="images/anchor.jpg" alt="A for Anchor" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 16</div>
+                <img src="images/robot.jpg" alt="R for Robot" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 / 16</div>
+                <img src="images/mug.jpg" alt="M for Mug" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">11 / 16</div>
+                <img src="images/sunflower.jpg" alt="S for Sunflower" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">12 / 16</div>
+                <img src="images/train.jpg" alt="T for Train" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">13 / 16</div>
+                <img src="images/rainbow.jpg" alt="R for Rainbow" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">14 / 16</div>
+                <img src="images/owl.jpg" alt="O for Owl" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">15 / 16</div>
+                <img src="images/necklace.jpg" alt="N for Necklace" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">16 / 16</div>
+                <img src="images/guitar.jpg" alt="G for Guitar" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="images/teaset.jpg" style="width:100%" onclick="currentSlide(1)" alt="Tea Set">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/airplane.jpg" style="width:100%" onclick="currentSlide(2)" alt="Airplane">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/nest.jpg" style="width:100%" onclick="currentSlide(3)" alt="Nest">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/icecream.jpg" style="width:100%" onclick="currentSlide(4)" alt="Ice cream">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/yarn.jpg" style="width:100%" onclick="currentSlide(5)" alt="Yarn">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/apple.jpg" style="width:100%" onclick="currentSlide(6)" alt="Apple">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/headphones.jpg" style="width:100%" onclick="currentSlide(7)" alt="Headphones">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/anchor.jpg" style="width:100%" onclick="currentSlide(8)" alt="Anchor">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/robot.jpg" style="width:100%" onclick="currentSlide(9)" alt="Robot">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/mug.jpg" style="width:100%" onclick="currentSlide(10)" alt="Mug">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/sunflower.jpg" style="width:100%" onclick="currentSlide(11)" alt="Sunflower">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/train.jpg" style="width:100%" onclick="currentSlide(12)" alt="Train">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/rainbow.jpg" style="width:100%" onclick="currentSlide(13)" alt="Rainbow">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/owl.jpg" style="width:100%" onclick="currentSlide(14)" alt="Owl">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/necklace.jpg" style="width:100%" onclick="currentSlide(15)" alt="Necklace">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="images/guitar.jpg" style="width:100%" onclick="currentSlide(16)" alt="Guitar">
+                </div>
+            </div>
+        </div>
+        <h3>Image List</h3>
+        <ul>
+            <li><a href="images/teaset.jpg" target="_blank">Tea Set</a></li>
+            <li><a href="images/airplane.jpg" target="_blank">Airplane</a></li>
+            <li><a href="images/nest.jpg" target="_blank">Nest</a></li>
+            <li><a href="images/icecream.jpg" target="_blank">Ice Cream</a></li>
+            <li><a href="images/yarn.jpg" target="_blank">Yarn</a></li>
+            <li><a href="images/apple.jpg" target="_blank">Apple</a></li>
+            <li><a href="images/headphones.jpg" target="_blank">Headphones</a></li>
+            <li><a href="images/anchor.jpg" target="_blank">Anchor</a></li>
+            <li><a href="images/robot.jpg" target="_blank">Robot</a></li>
+            <li><a href="images/mug.jpg" target="_blank">Mug</a></li>
+            <li><a href="images/sunflower.jpg" target="_blank">Sunflower</a></li>
+            <li><a href="images/train.jpg" target="_blank">Train</a></li>
+            <li><a href="images/rainbow.jpg" target="_blank">Rainbow</a></li>
+            <li><a href="images/owl.jpg" target="_blank">Owl</a></li>
+            <li><a href="images/necklace.jpg" target="_blank">Necklace</a></li>
+            <li><a href="images/guitar.jpg" target="_blank">Guitar</a></li>
+        </ul>
+        <h3>Notes:</h3>
+            <ul>
+                <li>I used <a href="https://magicstudio.com/ai-art-generator/">Magic Studio AI Generator</a> to generate images</li>
+                <li>Prompts:
+                    <ul>
+                        <li style="list-style: decimal;">Purple tea set</li>
+                        <li style="list-style: decimal;">Airplane</li>
+                        <li style="list-style: decimal;">Nest</li>
+                        <li style="list-style: decimal;">Ice cream cone</li>
+                        <li style="list-style: decimal;">Yarn</li>
+                        <li style="list-style: decimal;">Apple</li>
+                        <li style="list-style: decimal;">Headphones</li>
+                        <li style="list-style: decimal;">Anchor in the water</li>
+                        <li style="list-style: decimal;">Robot</li>
+                        <li style="list-style: decimal;">Mug</li>
+                        <li style="list-style: decimal;">Valley of sunflowers</li>
+                        <li style="list-style: decimal;">Train</li>
+                        <li style="list-style: decimal;">Rainbow and a field of grass</li>
+                        <li style="list-style: decimal;">Owl</li>
+                        <li style="list-style: decimal;">Sapphire Necklace</li>
+                        <li style="list-style: decimal;">Guitar</li>
+                    </ul>
+                </li>
+                <li>This is my own work and I did not copy and paste someone else's code.</li>
+                <li>Signed, <em>Taniyah D. Armstrong, 5/3/2025 11:16</em></li>
+            </ul>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
@@ -22,5 +208,39 @@
             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script>
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n){
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = slides[slideIndex-1].querySelector("img").alt;
+        }
+        window.onload = function() {
+            showSlides(slideIndex);
+        }
+    </script>
 </body>
 </html>
