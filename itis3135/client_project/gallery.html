@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../client_project/styles/cpstyles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Nit Picky Confections Gallery Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <div class="gallery-page">
+            <h1>Crafted With Love: Our Gallery</h1>
+            <p>We offer a variety of custome cakes, cupcakes, and treats. For prices, please submit a order request form.</p>
+            <button class="cta-button" onclick="location.href='order.html'">Order Now!</button>
+        </div>
+
+
+        <div class="gallery-section" id="cakes">
+            <h2>Cakes</h2>
+            <div class="gallery-grids">
+                <!-- 16 images, first 4 visible -->
+                <img src="images/cakes/colorPallete.jpg" alt="Cake 1">
+                <img src="images/cakes/purpleAndGolddrip.jpg" alt="Cake 2">
+                <img src="images/cakes/bubbles.jpg" alt="Cake 3">
+                <img src="images/cakes/cake17.jpg" alt="Cake 4">
+                <img src="images/cakes/donuts.jpg" alt="Cake 5" class="toggle-img hidden">
+                <img src="images/cakes/yellowAndPink.jpg" alt="Cake 6" class="toggle-img hidden">
+                <img src="images/cakes/whiteAndRed.jpg" alt="Cake 7" class="toggle-img hidden">
+                <img src="images/cakes/purpleFlowers.jpg" alt="Cake 8" class="toggle-img hidden">
+                <img src="images/cakes/whiteAndBlueCake.jpg" alt="Cake 9" class="toggle-img hidden">
+                <img src="images/cakes/purpleAndGoldButterflies.jpg" alt="Cake 10" class="toggle-img hidden">
+                <img src="images/cakes/unicorn.jpg" alt="Cake 11" class="toggle-img hidden">
+                <img src="images/cakes/whiteAndGold.jpg" alt="Cake 12" class="toggle-img hidden">
+                <img src="images/cakes/purpleFlowers.jpg" alt="Cake 13" class="toggle-img hidden">
+                <img src="images/cakes/whiteAndColorfulFlowers.jpg" alt="Cake 14" class="toggle-img hidden">
+                <img src="images/cakes/heartCake.jpg" alt="Cake 15" class="toggle-img hidden">
+                <img src="images/cakes/purpleScaleCake.jpg" alt="Cake 16" class="toggle-img hidden">
+            </div>
+            <button class="see-more-btn" onclick="toggleImages('cakes')">See More</button>
+        </div>
+          
+        <div class="gallery-section" id="cupcakes">
+            <h2>Cupcakes</h2>
+            <div class="gallery-grids">
+                <!-- 8 images, first 4 visible -->
+                <img src="images/cupcakes/pinkCupcakes.jpg" alt="Cupcake 1">
+                <img src="images/cupcakes/smore.jpg" alt="Cupcake 2">
+                <img src="images/cupcakes/bearCupcakes.jpg" alt="Cupcake 3">
+                <img src="images/cupcakes/cinnamonRollCupcakes.jpg" alt="Cupcake 4">
+                <img src="images/cupcakes/whiteCupcakes.jpg" alt="Cupcake 5" class="toggle-img hidden">
+                <img src="images/cupcakes/cookieCupcakes.jpg" alt="Cupcake 6" class="toggle-img hidden">
+                <img src="images/cupcakes/purpleCupckaes.jpg" alt="Cupcake 7" class="toggle-img hidden">
+                <img src="images/cupcakes/pecan.jpg" alt="Cupcake 8" class="toggle-img hidden">
+            </div>
+            <button class="see-more-btn" onclick="toggleImages('cupcakes')">See More</button>
+        </div>
+          
+        <div class="gallery-section" id="treats">
+            <h2>Treats</h2>
+            <div class="gallery-grids">
+                <!-- 12 images, first 4 visible -->
+                <img src="images/Treats/chocolateOreo.jpg" alt="Treat 1">
+                <img src="images/Treats/chococookiejar.jpg" alt="Treat 2">
+                <img src="images/Treats/purpleStrawbetties.jpg" alt="Treat 3">
+                <img src="images/Treats/bearApples.jpg" alt="Treat 4">
+                <img src="images/Treats/chocolateRiceK.PNG" alt="Treat 5" class="toggle-img hidden">
+                <img src="images/Treats/redStrawberries.jpg" alt="Treat 6" class="toggle-img hidden">
+                <img src="images/Treats/pretzel.jpg" alt="Treat 7" class="toggle-img hidden">
+                <img src="images/Treats/butterflyOreo.PNG" alt="Treat 8" class="toggle-img hidden">
+                <img src="images/Treats/IMG_9648.jpg" alt="Treat 9" class="toggle-img hidden">
+                <img src="images/Treats/lemonCookieJar.jpg" alt="Treat 10" class="toggle-img hidden">
+                <img src="images/Treats/unicornApples.jpg" alt="Treat 11" class="toggle-img hidden">
+                <img src="images/Treats/treatAssortment.PNG" alt="Treat 12" class="toggle-img hidden">
+            </div>
+            <button class="see-more-btn" onclick="toggleImages('treats')">See More</button>
+        </div>
+        
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../client_project/styles/cpstyles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Nit Picky Confections Home Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <section class="hero-carousel">
+            <div class="carousel-slide" id="carousel-slide">
+                <div class="carousel-item">
+                    <img src="images/cakes/colorPallete.jpg" alt="Color Pallete Cake">
+                    <div class="overlay-text">
+                        <h1>Nit Picky Confections</h1>
+                        <p>Delicious Desserts Created with Love</p>
+                        <button class="cta-button" onclick="location.href='gallery.html'">View Cakes</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cakes/mothersDay.jpg" alt="Mother's Day Cake">
+                    <div class="overlay-text">
+                        <h1>Mother's Day Mini Cake Sale</h1>
+                        <button class="cta-button" onclick="location.href='order.html'">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Treats/mothersDayBundle.jpg" alt="Momosa Box">
+                    <div class="overlay-text">
+                        <h1>Momosa Box</h1>
+                        <p>$35 - Must Pre-order & Pre-pay</p>
+                        <button class="cta-button" onclick="location.href='order.html'">Order Now</button>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="carousel-controls">
+                <button>&#10094;</button>
+                <button>&#10095;</button>
+            </div>
+        </section>
+
+        <section class="about-teaser">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/cakes/heartCake.jpg" alt="Image representing Nit Picky Confections with Cake and treats">
+                </div>
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p><strong>At Nit Picky Confections, we believe that every sweet detail matters.</strong></p>
+                    <p>From custom cakes to elegant event treats, we specialize in hand-crafted baked goods that are as beautiful as they are delicious.</p>
+                    <button class="cta-button" onclick="location.href='about.html'">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-preview">
+            <h2>Delicious Desigs in Focus</h2>
+            <h3>We offer a variety of custome cakes, cupcakes, treats and more</h3>
+            <div class="gallery-scroll">
+                <img src="images/cakes/yellowAndPink.jpg" alt="Custom Cake">
+                <img src="images/cupcakes/whiteCupcakes.jpg" alt="Custom Cupcakes">
+                <img src="images/Treats/lemonCookieJar.jpg" alt="Lemon Cookie Jar">
+                <img src="images/Treats/treatAssortment.PNG" alt="Custom Assorted Treats">
+            </div>
+            <button class="cta-button" onclick="location.href='gallery.html'">View Full Gallery</button>
+        </section>
+
+        <section class="menu-highlights">
+            <div class="container">
+                <h2 class="section-title">Menu Highlights</h2>
+                <p class="section-subtitle">
+                    A taste of what we offer - baked fresh and filled with our signature Swiss Meringue Buttercream!
+                </p>
+
+                <div class="columns">
+                    <div class="column">
+                        <h3 class="column-title">Classic Cake Flavors</h3>
+                        <ul>
+                            <li>Butter Vanilla</li>
+                            <li>Chocolate</li>
+                            <li>Red Velvet</li>
+                            <li>Lemon</li>
+                            <li>Funfetti</li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="column-title">Premium Cake Flavors</h3>
+                        <ul>
+                            <li><strong>Chocolate Covered Strawberry</strong> - Chocolate cake with white chocolate strawberry buttercream.</li>
+                            <li><strong>Chunky Monkey</strong> - Banana cake with caramel buttercream, fresh banana, toffee, and chocolate chunks.</li>
+                            <li><strong>Lemon Blueberry Crumble</strong> - Lemon cake with blueberry reduction, cookie crumble, and signature buttercream.</li>
+                        </ul>
+                    </div>
+
+                    <div class="column">
+                        <h3 class="column-title" >Popular Fillings</h3>
+                        <ul>
+                            <li>Cookie Butter</li>
+                            <li>Crushed Oreo</li>
+                            <li>Fresh Strawberry</li>
+                            <li>Salted Caramel</li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="cta-button" onclick="location.href='gallery.html'">Explore Full Menu</button>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-slider">
+                <img src="images/testimonies/testimony1.jpg" class="testimonial active" alt="Testimonial 1">
+                <img src="images/testimonies/testimony2.jpg" class="testimonial" alt="Testimonial 2">
+                <img src="images/testimonies/testimony3.jpg" class="testimonial" alt="Testimonial 3">
+            </div>
+            <div class="testimonial-controls">
+                <button id="prevButton"></button>
+                <button id="nextButton"></button>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="site-footer">
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

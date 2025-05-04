@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Custom Cake Order Form</title>
+    <style>
+        :root {
+            --background: #fff8f4;
+            --cream: #fff8d6;
+            --yellow: #f6d329;
+            --light-pink: #f3e2d3;
+            --muave: #e7a6ab;
+            --brown-pink: #c28879;
+            --vivid-pink: #c21870;
+            --neutral-pink: #b03a63;
+            --brown: #5c3a2e;
+            --black: #241611;
+        } 
+        
+        .banner img {
+            height: 120px; 
+            width: auto; 
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 13%;
+            border-radius: 6px;
+        }
+        .banner {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 1rem 5%; 
+            height: 150px;
+            background-color: var(--vivid-pink);
+            width: 100vw; 
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        .banner nav a {
+            font-family: 'Noto Serif', serif;
+            margin: 0 30px; 
+            text-decoration: none;
+            font-size: 30px;
+            color: var(--cream); 
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            background-color: var(--background);
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--vivid-pink);
+            font-family: 'Noto Serif', serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--light-pink);
+            border-radius: 8px;
+            padding: 20px;
+            background-color: var(--muave);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: var(--brown);
+            color: var(--background);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: var(--neutral-pink);
+        }
+
+        .thank-you {
+            display: none;
+            text-align: center;
+            color: green;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+        }
+
+        footer {
+            border-top: 3px solid var(--vivid-pink);
+        }
+        footer p {
+            color: var(--black);
+            font-size: 18px;
+        }
+        footer a{
+            color: var(--vivid-pink);
+        }
+        footer a:hover{
+            color: var(--brown);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>Custom Cake Order Form</h2>
+
+        <form id="orderForm" novalidate>
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+    
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error" id="emailError"></span>
+    
+            <label for="phone">Phone Number*</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span class="error" id="phoneError"></span>
+    
+            <label for="cakeType">Cake Type*</label>
+            <select id="cakeType" name="cakeType" required>
+                <option value="">Select a type</option>
+                <option value="custom_cake">Custom Cake</option>
+                <option value="cupcakes">Cupcakes</option>
+                <option value="cakepops">Treat Bundle</option>
+            </select>
+            <span class="error" id="cakeTypeError"></span>
+    
+            <label for="flavor">Flavor*</label>
+            <select id="flavor" name="flavor" required>
+                <option value="">Choose a flavor</option>
+                <option value="vanilla">Butter Vanilla</option>
+                <option value="cinnamon">Cinnamon</option>
+                <option value="red_velvet">Red Velvet</option>
+                <option value="other">Other</option>
+            </select>
+            <span class="error" id="flavorError"></span>
+    
+            <label for="date">Pickup Date*</label>
+            <input type="date" id="date" name="date" required>
+            <span class="error" id="dateError"></span>
+    
+            <label for="comments">Design Details or Questions</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+    
+            <button type="submit">Submit Order Request</button>
+        </form>
+        <div class="thank-you" id="thankYouMessage">Thank you for submitting your order! We will contact you shortly.</div>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('orderForm');
+        const thankYou = document.getElementById('thankYouMessage');
+
+        form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Clear errors
+        document.querySelectorAll('.error').forEach((el) => el.textContent = '');
+
+        // Basic validation
+        let valid = true;
+
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const phone = form.phone.value.trim();
+        const cakeType = form.cakeType.value;
+        const flavor = form.flavor.value;
+        const date = form.date.value;
+
+        if (!name) {
+            document.getElementById('nameError').textContent = 'Name is required.';
+            valid = false;
+        }
+        if (!email || !email.includes('@')) {
+            document.getElementById('emailError').textContent = 'Valid email is required.';
+            valid = false;
+        }
+        if (!phone || phone.length < 7) {
+            document.getElementById('phoneError').textContent = 'Valid phone number is required.';
+            valid = false;
+        }
+        if (!cakeType) {
+            document.getElementById('cakeTypeError').textContent = 'Please select a cake type.';
+            valid = false;
+        }
+        if (!flavor) {
+            document.getElementById('flavorError').textContent = 'Please select a flavor.';
+            valid = false;
+        }
+        if (!date) {
+            document.getElementById('dateError').textContent = 'Please select a pickup date.';
+            valid = false;
+        }
+
+        if (valid) {
+            // Simulate AJAX submission
+            setTimeout(() => {
+            form.reset();
+            form.style.display = 'none';
+            thankYou.style.display = 'block';
+            }, 500);
+        }
+        });
+    </script>
+    <script src="../scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
