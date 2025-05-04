@@ -4,15 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taniyah Armstrong's Tranquil Antelope || BYO Intro</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/intro.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>Intro</h2>
-        
+        <h2>BYO Intro</h2>
+        <h3>Fill out the form below to create <strong>your own</strong> introduction website!</h3>
+        <form id="intro-form">
+            <label for="name">Name: <input type="text" id="name" placeholder="Taniyah Armstrong" required ></label>
+            <label for="mascot">Mascot: <input type="text" id="mascot" placeholder="Tranquil Antelope" required></label>
+            <label for="image">Image: <input type="file" id="image" accept="image/jpeg, image/png" required></label>
+            <div id="load-image"></div>
+            <label for="image-caption">Image Caption: <input type="text" id="image-caption" placeholder="Carowinds Golden Pass ID Photo 2024." required></label>
+            <label for="personal-background">Personal Background: <input type="text" id="personal-background" placeholder="I was born and raised in Raleigh, North Carolina. I came to charlotte to get my bachelor’s degree in Computer Science." required></label>
+            <label for="professional-background">Professional Background: <input type="text" id="professional-background" placeholder="I worked in hospitality for four years. I hope to expand my knowledge and experience of computer science and earn an internship." required></label>
+            <label for="academic-background">Academic Background: <input type="text" id="academic-background" placeholder="I am currently a sophomore at UNC Charlotte.I haven't decided which concentration I would like to pursue." required></label>
+            <label for="web-dev-background">Web Development Background: <input type="text" id="web-dev-background" placeholder=" I have experience with Python, Java, JavaScript, and Bash. While I’m not familiar with HTML or CSS, I’m excited to learn them." required></label>
+            <label for="primary-computer">Primary Computer Platform: <input type="text" id="primary-computer" placeholder="Windows Laptop" required></label>
+            <label>Courses</label>
+            <div id="courses"></div>
+            <button type="button" onclick="addCourse()">Add Course</button>
+            <label for="funny">Funny Thing About Me: <input type="text" id="funny"></label>
+            <label for="anything-else">Anything Else: <input type="text" id="anything-else" ></label>
+            <label for="agreement"><input type="checkbox" id="agreement" required> I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+
+            <div>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+        <div id="output"></div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
@@ -22,5 +48,6 @@
             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js"></script>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <title>Taniyah Armstrong's Tranquil Antelope || Name SlideShow</title>
     <link rel="stylesheet" href="styles/slideshow.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -211,23 +212,15 @@
     <script>
 
         let slideIndex = 1;
-        showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n){
-            showSlides(slideIndex = n);
-        }
 
         function showSlides(n){
             let i;
             let slides = document.getElementsByClassName("mySlides");
             let dots = document.getElementsByClassName("demo");
             let captionText = document.getElementById("caption");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
+            if (n > slides.length) {slideIndex = 1;}
+            if (n < 1) {slideIndex = slides.length;}
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
@@ -240,7 +233,18 @@
         }
         window.onload = function() {
             showSlides(slideIndex);
+        };
+
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
+
+        function currentSlide(n){
+            showSlides(slideIndex = n);
+        }
+
     </script>
 </body>
 </html>
