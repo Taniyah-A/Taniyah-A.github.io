@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Start the slider
   function startSlider() {
-    intervalId = setInterval(nextTestimonial, 5000);
+    intervalId = setInterval(nextTestimonial, 8000);
   }
 
   // Stop the slider
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     clearInterval(intervalId);
   }
 
-  // Initialize the slider
+  
   startSlider();
 
   // Hover events to stop and start the slider
@@ -86,7 +86,7 @@ function toggleImages(sectionId) {
     img.classList.toggle('hidden');
   });
 
-  // Toggle button text
+  // Toggle button text of See Less and See More
   if (button.innerText === "See More") {
     button.innerText = "See Less";
   } else {

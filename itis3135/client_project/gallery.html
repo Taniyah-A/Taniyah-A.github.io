@@ -23,11 +23,13 @@
         <div class="gallery-section" id="cakes">
             <h2>Cakes</h2>
             <div class="gallery-grids">
-                <!-- 16 images, first 4 visible -->
+                <!-- 16 images of cakes, first 4 visible -->
                 <img src="images/cakes/colorPallete.jpg" alt="Cake 1">
                 <img src="images/cakes/purpleAndGolddrip.jpg" alt="Cake 2">
                 <img src="images/cakes/bubbles.jpg" alt="Cake 3">
                 <img src="images/cakes/cake17.jpg" alt="Cake 4">
+                
+                <!-- I'm using the "toggle-img" class as well to ensure the "See Less" button works as intended.-->
                 <img src="images/cakes/donuts.jpg" alt="Cake 5" class="toggle-img hidden">
                 <img src="images/cakes/yellowAndPink.jpg" alt="Cake 6" class="toggle-img hidden">
                 <img src="images/cakes/whiteAndRed.jpg" alt="Cake 7" class="toggle-img hidden">
@@ -49,13 +51,13 @@
             <div class="gallery-grids">
                 <!-- 8 images, first 4 visible -->
                 <img src="images/cupcakes/pinkCupcakes.jpg" alt="Cupcake 1">
-                <img src="images/cupcakes/smore.jpg" alt="Cupcake 2">
+                <img src="images/cupcakes/cinnamonRollCupcakes.jpg" alt="Cupcake 2">
                 <img src="images/cupcakes/bearCupcakes.jpg" alt="Cupcake 3">
-                <img src="images/cupcakes/cinnamonRollCupcakes.jpg" alt="Cupcake 4">
+                <img src="images/cupcakes/smore.jpg" alt="Cupcake 4">
                 <img src="images/cupcakes/whiteCupcakes.jpg" alt="Cupcake 5" class="toggle-img hidden">
                 <img src="images/cupcakes/cookieCupcakes.jpg" alt="Cupcake 6" class="toggle-img hidden">
-                <img src="images/cupcakes/purpleCupckaes.jpg" alt="Cupcake 7" class="toggle-img hidden">
-                <img src="images/cupcakes/pecan.jpg" alt="Cupcake 8" class="toggle-img hidden">
+                <img src="images/cupcakes/pecan.jpg" alt="Cupcake 7" class="toggle-img hidden">
+                <img src="images/cupcakes/purpleCupckaes.jpg" alt="Cupcake 8" class="toggle-img hidden">
             </div>
             <button class="see-more-btn" onclick="toggleImages('cupcakes')">See More</button>
         </div>
@@ -66,8 +68,8 @@
                 <!-- 12 images, first 4 visible -->
                 <img src="images/Treats/chocolateOreo.jpg" alt="Treat 1">
                 <img src="images/Treats/chococookiejar.jpg" alt="Treat 2">
-                <img src="images/Treats/purpleStrawbetties.jpg" alt="Treat 3">
-                <img src="images/Treats/bearApples.jpg" alt="Treat 4">
+                <img src="images/Treats/bearApples.jpg" alt="Treat 3">
+                <img src="images/Treats/purpleStrawbetties.jpg" alt="Treat 4">
                 <img src="images/Treats/chocolateRiceK.PNG" alt="Treat 5" class="toggle-img hidden">
                 <img src="images/Treats/redStrawberries.jpg" alt="Treat 6" class="toggle-img hidden">
                 <img src="images/Treats/pretzel.jpg" alt="Treat 7" class="toggle-img hidden">
@@ -87,5 +89,9 @@
     </footer>
     <script src="../scripts/HTMLInclude.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
 </body>
 </html>

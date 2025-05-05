@@ -13,6 +13,8 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
+        <!--This Section will contain a carousel of three images with three call to action buttons that send the user to the gallery or order page.-->
+        <!-- The purpose of this section is to show current announcements and highlight beautiful treats.-->
         <section class="hero-carousel">
             <div class="carousel-slide" id="carousel-slide">
                 <div class="carousel-item">
@@ -46,6 +48,8 @@
             </div>
         </section>
 
+        <!-- This section will contain one image and a brief introduction of the company. It will also contain a call to action button that sends the user
+          to the "About Us" page-->
         <section class="about-teaser">
             <div class="about-content">
                 <div class="about-image">
@@ -60,6 +64,9 @@
             </div>
         </section>
 
+        <!-- This section will contain three images that the user can scroll through horizontally. This section is a sneak peak of the gallery and contains 
+         another call to action button that sends the user to the "Gallery" Page.
+        -->
         <section class="gallery-preview">
             <h2>Delicious Desigs in Focus</h2>
             <h3>We offer a variety of custome cakes, cupcakes, treats and more</h3>
@@ -72,6 +79,7 @@
             <button class="cta-button" onclick="location.href='gallery.html'">View Full Gallery</button>
         </section>
 
+        <!-- This Section will contain a menu highlights and a button that is linked to the "Menu" page-->
         <section class="menu-highlights">
             <div class="container">
                 <h2 class="section-title">Menu Highlights</h2>
@@ -114,6 +122,7 @@
             </div>
         </section>
 
+        <!-- This section will include another carousel with three images of  customer testimonials. The buttons are for next and previous. -->
         <section class="testimonials">
             <h2>What Our Customers Say</h2>
             <div class="testimonial-slider">
@@ -132,6 +141,10 @@
     <footer class="site-footer">
         <div data-include="components/footer.html"></div>
     </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
     <script src="../scripts/HTMLInclude.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
