@@ -41,6 +41,9 @@ ul {
 main p{
     text-align: left;
 }
+.interactive {
+    font-size: 30px;
+}
 
 /* For Laptops */
 @media screen and (min-width: 981px) {

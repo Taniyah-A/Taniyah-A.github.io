@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Taniyah Armstrong's Tranquil Antelope || Interactive Drawing</title>
     <link rel="stylesheet" href="styles/default.css">
 </head>
@@ -11,8 +12,11 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
-        <h2>Interactive Drawing</h2>
-        
+        <h2 class="interactive">Interactive Drawing</h2>
+        <div class="drawing">
+            <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
+            <script src="scripts/sketch.js"></script>
+        </div>
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
